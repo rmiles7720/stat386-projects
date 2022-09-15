@@ -20,7 +20,8 @@
 
 title: Data Science For Struggling Stats Students
 email: rmiles7720@gmail.com 
-description: >- Finding somewhere where I can learn about coding and data mining/engineering simply has always been rather hard for me, so hopefully I can share some of my knowledge to help other students that feel a bit in over their heads! 
+description: >- 
+#Finding somewhere where I can learn about coding and data mining/engineering simply has always been rather hard for me, so hopefully I can share some of my knowledge to help other students that feel a bit in over their heads! 
 baseurl: "/stat386-projects" # keep this the same or change it to the name of the repository 
 url: "https://rmiles7720.github.io" #  change this to "https://<your-github-username>.github.io"
 image: "assets/images/image5.jpg"
