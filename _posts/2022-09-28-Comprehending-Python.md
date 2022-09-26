@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "My project 1"
+title:  "Comprehending Python: A Guide to List Comprehensions, Dictionary Comprehensions and More"
 date:   2022-08-02
 author: Project Author
 description: This is a cool project.
