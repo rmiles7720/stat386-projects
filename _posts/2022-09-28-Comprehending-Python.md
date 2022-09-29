@@ -27,7 +27,7 @@ Here is the code for a list comprehension that preforms the same function. X is 
 list = [x for x in range(1, 50) if x % 4 == 0]
 print(list)
 ```
-#####Lets break it down. 
+##### Lets break it down. 
 Start from the left. We make a list (in this case named list) equal to the list comprehension of the arbitrary variable X for X in a group of number ranging from 1 to 50 that are divisible by 4. There's almost no difference between the for loop above and this list comprehension except for the fact that it's on one line, the words are in brackets, there's no colons, and there's an extra use of X at the beginning.
 
 I would also like to note that it helps to make a for loop for every list comprehension you make, at least at the start. It may seem like it defeats the purpose of coding the list comprehension, but it does help to build it since they both have the same building blocks. Eventually you should be able to write list comprehensions without doing that step, but if you're having trouble, it's a good middle step to try. 
@@ -38,9 +38,20 @@ Dictionary Comprehensions work very similarly to list comprehensions in that you
 
 This code is essential making the same list as both the for loop and the list comprehension, as in creating a group of numbers ranging from 1 to 50 which are divisible by 4. The key to each number is that number divided by 4, which makes the keys end up being a count from 1 to the end of the list. 
 
+Note that the variable used here is referred to as key, but once again is a completely arbitrary choice. 
+
 Here is that code:
 ``` {code}
 dictionary = {key: [key/4] for key in range(1, 50) if key % 4 == 0}
 print(dictionary)
 ```
-#####Let's break it down
+##### Let's break it down
+We make a dictionary (in this case named dictionary) equal to the dictionary comprehension of the arbitrary variable key where the value is the key divided by 4. I like the look of having each key and corresponding value on different lines and in brackets, so that's what the brackets around key/4 is, but that isn't required. The range is from 1 to 50 and the key must be divisible by 4. 
+
+Once again, notice the use of a arbitrary variable in a for statement within a set range and an if condition. The only change is the automatic intialization of the dictionary and how I denoted what I wanted the key to be.
+
+## Conclusion
+Making dictionaries and lists can be hard. For loops can make this process easier, but there are built in functions (list comprehensions and dictionary comprehensions) which are designed to make this process easier and more efficient. It helps to make the for loops along side the comprehensions when starting out to learn the building blocks that go into making list and dictionary comprehensions. They may seems different at first, but there are essentially the same code written differently.
+
+Happy coding!
+
