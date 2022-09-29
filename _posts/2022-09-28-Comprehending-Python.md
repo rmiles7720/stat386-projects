@@ -4,7 +4,7 @@ title:  "Comprehending Python: A Guide to List and Dictionary Comprehensions"
 date:   2022-09-28
 author: Rachel Miles
 description: The different kinds of list comprehensions and dictionary comprehensions you can use to bypass for loops can be a little complicated, and I literally love doing anything that doesn't involve for loops, so lets see if we can't figure it out!
-image: 
+image: /assets/images/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg
 ---
 
 Any student who has learned the coding language for R and Rstudio has heard: Do not use loops! They're not worth it! As a dutiful student who was blissfully unaware of how other programming language worked, I took this direction quite literally. Any time I didn't have to use a for loop was a success. Unfortunately after becoming familiar with C++, SAS, python, and Linux, I realized that this approach was not sustainable. These different languages thrive on using for loops to generate and populate objects. Without a for loop, you really can't do much coding at all. The coding it would take to add things by hand isn't worth it, trust me, so I resigned myself to learn for loops.
@@ -14,6 +14,27 @@ Once learning python however, I realized that there are alternatives to using lo
 ## List Comprehensions
 
 
+``` {code}
+list = []
+for x in range(1, 50):
+    if x % 4 == 0:
+            list.append(x)
+print(list) 
+```
+
+
+
+``` {code}
+list = [x for x in range(1, 50) if x % 4 == 0]
+print(list)
+```
+
 
 
 ## Dictionary Comprehensions
+
+
+``` {code}
+{key: [key/5] for key in range(1, 50) if key % 5 == 0}
+```
+
