@@ -53,9 +53,9 @@ Once again, notice the use of a arbitrary variable in a for statement within a s
 ## Conclusion
 Making dictionaries and lists can be hard. For loops can make this process easier, but there are built in functions (list comprehensions and dictionary comprehensions) which are designed to make this process easier and more efficient. It helps to make the for loops along side the comprehensions when starting out to learn the building blocks that go into making list and dictionary comprehensions. They may seems different at first, but there are essentially the same code written differently.
 
-For more information on list comprehensions see here: [https://www.w3schools.com/python/python_lists_comprehension.asp](#)
+For more information on list comprehensions see here: [List Comprehensions](https://www.w3schools.com/python/python_lists_comprehension.asp)
 
-For more information on dictionary comprehensions see here: [https://www.geeksforgeeks.org/python-dictionary-comprehension/](#)
+For more information on dictionary comprehensions see here: [Dictionary Comprehensions](https://www.geeksforgeeks.org/python-dictionary-comprehension/)
 
 Happy coding!
 
