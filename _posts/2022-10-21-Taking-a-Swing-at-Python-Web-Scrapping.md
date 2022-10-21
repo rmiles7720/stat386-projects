@@ -10,16 +10,18 @@ I've liked baseball since I was old enough to talk.
 
 Growing up, I thought going to baseball games was the best thing ever. My Mom would take me to the Dodgers games and we'd eat hot dogs, sing "take me out to the ball game", and I'd get to stay up past 9:00pm. I was a kid living the dream and I was loving it. 
 
-Unfortunately, I can't really go to games all that often any more. Too much money, not enough time. Perks of being a college student right? Since this is an absolute travesty, I decided that if I can't go and enjoy the baseball magic at a game, why not bring the baseball magic into my life? What's the point of learning statistics if I can't use them to overanalyze something I really enjoy? So the journey began, and oh boy, I didn't think it was going to be this hard. 
+Unfortunately, I can't really go to games all that often any more. Too much money, not enough time. Perks of being a college student right? Since this development was an absolute travesty, I decided that if I can't go and enjoy the baseball magic at a game, why not bring the baseball magic into my life? What's the point of learning statistics if I can't use them to overanalyze something I really enjoy? 
+
+And so, the journey began, and oh boy, I didn't think it was going to be this hard.  
 
 ## Finding the data
 Finding the data itself was the easiest part. I've always wanted to know how much players made and how stats like RBI (Runs Batted In), HR (Home Runs), and what position they played affected what they earned. Since I was going to be doing a data analysis project, I decided I was going to answer this question definitively. 
 
 Thus began the hunt. 
 
-At first I thought I was going to have to scrape those stats off each team website (which would've been tedious and extremely stress inducing), but the problem was that most team websites don't tend to publicize how much their players make. That was supposed to be my dependent variable, and the fact that they didn't have it made that avenue rather useless. 
+At first I thought I was going to have to scrape those stats off each team website (which would've been tedious and extremely stress inducing), but the problem was that most team websites didn't publicize how much their players made in the past year. That was supposed to be my dependent variable, and the fact that they didn't have it made that option rather useless. 
 
-So I kept looking. I eventually found [spotrac.com](https://www.https://www.spotrac.com/)  and they had the variables I actually wanted, or at least position and salary, the two most important ones. They also have data on other sports leagues like the NBA, NHL, NFL, so if you're looking for data like that, it's an extremely useful website. 
+So I kept looking. I eventually found [spotrac.com](https://www.https://www.spotrac.com/) and they had the variables I actually wanted, or at least position and salary, the two most important ones. They also have data on other sports leagues like the NBA, NHL, NFL, so if you're looking for data like that, it's an extremely useful website. 
 
 I had found where my data was, now I had to get it off the web and into a file I could actually use. 
 
@@ -33,9 +35,9 @@ Once I thought that this data would be possible to scrape, I went to the robots.
 
 Cool, so it's technically and ethically possible. Now it's time for the scraping.
 
-The hardest part of this was setting up all the for loops to both scrape the tables and the data. Unfortunately I couldn't do a read_html on a page and get all the data because every dataset was on a different page. And being the tryhard that I am, I had to get every baseball team. All 30. So you can imagine how much time that to set up a for loop for getting each link to each page, read_html-ing each page, and then concating the first table in each page together to get a list of all the active players.
+The hardest part of this was setting up all the for loops to both scrape the tables and the data. Unfortunately I couldn't do a read_html on a page and get all the data because every dataset was on a different page. And being the tryhard that I am, I had to get every baseball team. All 30. So you can imagine how much time that took to set up a for loop for getting each link to each page, read_html-ing each page, and then concating the first table in each page together to get a list of all the active players.
 
-Why only the first table? I didn't feel it was necessary to include injured players or retired players or whatever have you. My dataset ended up being about 4100 entries long, and since those players made up a small subset of population, I was confident I would still get accurate results without those entries.
+Why only the first table? I didn't feel it was necessary to include injured players or retired players or whatever have you. My dataset ended up being about 4100 entries long, and since those players made up such a small subset of population, I was confident I would still get accurate results without those entries.
 
 So I got a table which looked something like this:
 ![Test image](https://raw.githubusercontent.com/rmiles7720/stat386-projects/main/assets/images/Blogpic1.png)
@@ -44,15 +46,15 @@ So I got a table which looked something like this:
 
 Which is wonderful! I got a dataframe! 
 
-However, as we've already established, that's not good enough. My table needed to be the best, cleanest table I had ever seen. I wouldn't accept anything less. So, it was on to the data cleaning phase. 
+However, as we've already established, I'm a tryhard. The table as it is? Gross. My table needed to be the best, cleanest table I had ever seen. I wouldn't accept anything less. So, it was on to the data cleaning phase. 
 
 
 ## Cleaning the data
-I would say this was the hardest part. I had to get rid of serveral variables, convert the table from wide to long, and make sure that the players names were in the same first column. 
+This was the hardest part. I had to get rid of serveral variables, convert the table from wide to long, and make sure that the players names were in the same first column. 
 
-As you can see above, the dataframe I got had multiple columns of active players. Why you may ask? Because different teams have diffent numbers of players. Some have 31, some have 30, some have 27, and some have 842 for some reason? Your guess is as good as mine. 
+As you can see above, the dataframe I got had multiple columns of active players. Why? Because different teams have diffent numbers of players. Some have 31, some have 30, some have 27, and some have 842 for some reason? Your guess is as good as mine. 
 
-I used pd.melt to make the table go from wide to long and then deleted the resulting column that listed out the number of active players the team had. Then, I switched the columns around so the name column would be first and dropped all the columns I didn't want. I ended up only keeping name, age, position, status, and adjusted salary, saince those were the variables I actually cared about. 
+I used pd.melt to make the table go from wide to long and then deleted the resulting column that listed out the number of active players the team had. Then, I switched the columns around so the name column would be first and dropped all the columns I didn't want. I ended up only keeping name, age, position, status, and adjusted salary since those were the variables I actually cared about. 
 
 My table ended up turning out like this:
 
