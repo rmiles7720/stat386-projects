@@ -20,7 +20,7 @@ Thus began the hunt.
 
 At first I thought I was going to have to scrape those stats off each team website (which would've been tedious and extremely stress inducing), but the problem was that most team websites don't tend to publicize how much their players make. That was supposed to be my dependent variable, and the fact that they didn't have it made that avenue rather useless. 
 
-So I kept looking. I eventually found spotrac.com  and they had the variables I actually wanted, or at least position and salary, the two most important ones. They also have data on other sports leagues like the NBA, NHL, NFL, so if you're looking for data like that, it's an extremely useful website. 
+So I kept looking. I eventually found [spotrac.com](https://www.https://www.spotrac.com/)  and they had the variables I actually wanted, or at least position and salary, the two most important ones. They also have data on other sports leagues like the NBA, NHL, NFL, so if you're looking for data like that, it's an extremely useful website. 
 
 I had found where my data was, now I had to get it off the web and into a file I could actually use. 
 
@@ -42,4 +42,32 @@ So I got a table which looked something like this:
 ![Test image](https://raw.githubusercontent.com/rmiles7720/stat386-projects/main/assets/images/Blogpic1.png)
 
 
+
+Which is wonderful! I got a dataframe! 
+
+However, as we've already established, that's not good enough. My table needed to be the best, cleanest table I had ever seen. I wouldn't accept anything less. So, it was on to the data cleaning phase. 
+
+
 ### Cleaning the data
+I would say this was the hardest part. I had to get rid of serveral variables, convert the table from wide to long, and make sure that the players names were in the same first column. 
+
+As you can see above, the dataframe I got had multiple columns of active players. Why you may ask? Because different teams have diffent numbers of players. Some have 31, some have 30, some have 27, and some have 842 for some reason? Your guess is as good as mine. 
+
+I used pd.melt to make the table go from wide to long and then deleted the resulting column that listed out the number of active players the team had. Then, I switched the columns around so the name column would be first and dropped all the columns I didn't want. I ended up only keeping name, age, position, status, and adjusted salary, saince those were the variables I actually cared about. 
+
+My table ended up turning out like this:
+![Test image](https://raw.githubusercontent.com/rmiles7720/stat386-projects/main/assets/images/Blogpic2.png)
+
+You might be wondering why it says it goes up to 26000 entries. It still goes up to 4100; the indexes didn't change when I dropped all the null values in the previous dataframe to get this one. 
+
+
+### Conclusion
+It was a lot of work, but I managed to clean and make a dataset I really liked. Web scrapping isn't easy, but it's definitely worth it!
+
+If you are interested in the nitty gritty of each step or my resulting data, I would recommend going to my repositiory: https://github.com/rmiles7720/mlbPayrollData 
+
+I have all the code I used, the resulting csv, and an intermediary file since web scrapping 30 teams' data off of multiple webpages takes a long time. 
+
+Here's where I found all the MLB data I could possibly want: [Spotrac MLB Data](https://www.spotrac.com/mlb/)
+
+Happy coding!
