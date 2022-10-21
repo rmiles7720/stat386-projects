@@ -8,9 +8,9 @@ image: /assets/images/joshua-peacock-aMuXhFkbxEw-unsplash.jpg
 ---
 I've liked baseball since I was old enough to talk.
 
-I thought going to baseball games was great. My Mom would take me to the Dodgers games and we'd eat hot dogs and sing "take me out to the ball game" and I'd get to stay up past 9:00pm. I was the kid living the dream and I was loving it. 
+Growing up, I thought going to baseball games was the best thing ever. My Mom would take me to the Dodgers games and we'd eat hot dogs, sing "take me out to the ball game", and I'd get to stay up past 9:00pm. I was a kid living the dream and I was loving it. 
 
-Unfortunately, I can't really go to games all that any more, so I decided if I can't go and enjoy the baseball magic at a game, why not bring the baseball magic into my life? What's the point of learning statistics if I can't use them to overanalyze something I really enjoy? So the journey began, and oh boy, I didn't think it was going to be this hard. 
+Unfortunately, I can't really go to games all that often any more. Too much money, not enough time. Perks of being a college student right? Since this is an absolute travesty, I decided that if I can't go and enjoy the baseball magic at a game, why not bring the baseball magic into my life? What's the point of learning statistics if I can't use them to overanalyze something I really enjoy? So the journey began, and oh boy, I didn't think it was going to be this hard. 
 
 ## Finding the data
 Finding the data itself was the easiest part. I've always wanted to know how much players made and how stats like RBI (Runs Batted In), HR (Home Runs), and what position they played affected what they earned. Since I was going to be doing a data analysis project, I decided I was going to answer this question definitively. 
