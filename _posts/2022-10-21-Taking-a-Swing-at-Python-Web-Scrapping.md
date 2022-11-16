@@ -58,9 +58,7 @@ I used pd.melt to make the table go from wide to long and then deleted the resul
 
 My table ended up turning out like this:
 
-![Test image](https://raw.githubusercontent.com/rmiles7720/stat386-projects/main/assets/images/Blogpic2.png)
-
-You might be wondering why it says it goes up to 26000 entries. It still goes up to 4100; the indexes didn't change when I dropped all the null values in the previous dataframe to get this one. 
+![Test image](https://raw.githubusercontent.com/rmiles7720/stat386-projects/main/assets/images/Screenshot 2022-11-15 224239.png)
 
 
 ## Conclusion
@@ -73,3 +71,5 @@ I have all the code I used, the resulting csv, and an intermediary file since we
 Here's where I found all the MLB data I could possibly want: [Spotrac MLB Data](https://www.spotrac.com/mlb/)
 
 Happy coding!
+
+Edit: I realized that the data set that I originally created has over 4100 entries, and the data should only have around 800. I have fixed this, and both the updated dataset and code are available on my github!
