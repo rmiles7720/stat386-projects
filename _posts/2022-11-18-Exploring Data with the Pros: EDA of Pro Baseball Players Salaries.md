@@ -55,7 +55,12 @@ Once again, I will have to look out for some lurking variables, but this is stil
 
 
 #### Position, Status, and Salary
-![Test Image](https://raw.githubusercontent.com/rmiles7720/stat386-projects/main/assets/images/_______________________)
+And for funsies, let's look at how four positions compare to each other. I've chosen first baseman, shortstop, and center fielder. I've made some boxplots that compare salary based on arbitration status. 
+
+![Test Image](https://raw.githubusercontent.com/rmiles7720/stat386-projects/main/assets/images/Statusboxplots.png)
+
+Interesting! Not only does it seem like that arbitration status provide different benefits based on position, sometimes means seem to go down between arbitration statuses. This is worth further investigation.
+
 
 
 ##Conclusion
