@@ -4,7 +4,7 @@ title: Exploring Data with the Pros: EDA of Pro Baseball Players Salaries
 date:   2022-11-18
 author: Rachel Miles
 description: An Exploratory Data Analysis of MLB Payroll data for 2022!
-image: 
+image: /assets/images/jose-francisco-morales-hKzmPs8Axh8-unsplash.jpg
 ---
 
 Have you ever wondered how much Pro Baseball Players get paid? Have you ever wondered if what position has effected how much make? Or how old they are? Or how long they've been in the league? 
