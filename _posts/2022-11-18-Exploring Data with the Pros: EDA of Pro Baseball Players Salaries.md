@@ -58,5 +58,10 @@ Once again, I will have to look out for some lurking variables, but this is stil
 ![Test Image](https://raw.githubusercontent.com/rmiles7720/stat386-projects/main/assets/images/_______________________)
 
 
+##Conclusion
+This is only an EDA, but this is valuable information I can use in my full analysis. I have an idea of what to look for and how to go forward.
 
+Tune in for the EDA very soon!
+
+Happy coding!
 
