@@ -4,7 +4,7 @@ title:  "The Story with Baseball Salaries"
 date:   2022-12-08
 author: Rachel Miles
 description: Telling the Data Story of MLB Players Positions and Their Salaries
-image: /assets/images/blog-4-picture.jpg
+image: /assets/images/blog-4-photo.jpg
 ---
 
 Data can tell many stories. There's so much information one dataset has, it can be difficult to explain results in a clear and concise way. There's so much to try and process, and like all good stories, there's a lot of time, effort, and editing that goes into it. 
